@@ -7,6 +7,7 @@
   --hero-bg-color: #2f303a;
   --team-bg-color: #F5F4FA;
   --header-border :#ECECEC;
+  --hover-color: #188ce8;
 }
 p,
 h1,
@@ -73,7 +74,7 @@ body {
 .contact-list {
   padding-top: 32px;
   padding-bottom: 32px;
-  display: block;
+  display: flex;
 
   font-weight: 500;
   font-size: 14px;
@@ -98,6 +99,12 @@ body {
   align-items: center;
   border-bottom: var(--header-border) 1px solid;
 }
+.contact-item-icon {
+  fill: currentColor;
+  margin-right: 10px;
+  }
+  
+
 /* ----------------------------Main---------------------------- */
 .container {
   width: 1200px;
@@ -157,6 +164,11 @@ padding-bottom: 94px;
   padding: 10px 32px;
   border-radius: 4px;
   max-height: 50px;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--hover-color);
+  color: var(--white);
 }
 .all-lists {
   list-style-type: none;
@@ -242,10 +254,13 @@ padding-bottom: 94px;
   list-style-type: none;
   font-style: normal;
   margin-left: auto;
+    justify-content: center;
+  align-items: center;
 }
 .all-lists-contact .item + .item {
   margin-left: 50px;
   display: flex;
+  
 }
 .benefits{
 padding-bottom: 0px;
