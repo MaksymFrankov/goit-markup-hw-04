@@ -174,7 +174,20 @@ padding-bottom: 94px;
   list-style-type: none;
   font-style: normal;
 }
-/* ------------------Benefits------------------ */
+/* ------------------Features------------------ */
+.features-icon-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--button-bg-color);
+  margin-bottom: 30px;
+}
+
+.features-icon-item+.features-icon-item {
+  margin-left: 30px;
+}
 .benefits-header {
   font-weight: 700;
   font-size: 14px;
@@ -199,6 +212,7 @@ padding-bottom: 94px;
   text-align: center;
   color: var(--main-text-color);
 }
+
 /* ----------------Team---------------- */
 .team {
   background-color: var(--team-bg-color);
