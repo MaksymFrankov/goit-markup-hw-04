@@ -261,8 +261,6 @@ padding-bottom: 94px;
 .team-social-list {
   display: flex;
   justify-content: center;
-  padding-left: 32px;
-  padding-right: 32px;
   list-style: none;
   margin-top: 16px;
 }
@@ -378,7 +376,7 @@ padding: 0;
 }
 .footer-all {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .footer-join {
